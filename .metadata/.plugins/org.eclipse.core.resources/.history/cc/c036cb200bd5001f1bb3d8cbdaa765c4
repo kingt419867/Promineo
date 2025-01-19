@@ -1,0 +1,14 @@
+package test02_conditionals;
+import java.io.*;
+import java.util.*;
+public class BasicLooping {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i;
+		for (i=0; i<=10; i = (i*2 +1)) {
+			System.out.println(i);
+		}
+	}
+
+}

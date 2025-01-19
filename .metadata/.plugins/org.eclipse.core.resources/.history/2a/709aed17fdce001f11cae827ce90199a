@@ -1,0 +1,11 @@
+package HelloWorldPackage;
+
+public class hwClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//This is different, below, than System.out.print(), because the 'ln' generates a line feed.
+		System.out.println("Hello, World");
+	}
+
+}

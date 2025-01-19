@@ -1,0 +1,16 @@
+package ScannerTest;
+import java.io.*;
+import java.util.*;
+public class scannerTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter your First and Last Name:");
+		Scanner kb = new Scanner(System.in);
+		String firstName, lastName;
+		firstName = kb.next();
+		lastName = kb.next();
+		System.out.println("Your name is " + firstName  + " " + lastName + ".");
+	}
+
+}

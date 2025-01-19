@@ -1,0 +1,26 @@
+package bankAccountTest;
+import java.io.*;
+import java.util.*;
+public class bankAccountTest {
+
+	public static void main(String[] args) {
+		
+		double currentBalance = 0, depositAmount = 0, withdrawalAmount = 0;
+		String formattedBalance = String.format("%.2f", currentBalance), formattedDeposit = String.format("%.sf", depositAmount), formattedWithdrawal = String.format("%.sf", withdrawalAmount);
+		
+		System.out.println("What is your starting balance? ");
+		Scanner kb = new Scanner(System.in);
+		currentBalance = kb.nextDouble();
+		
+		formattedBalance = String.format("%.2f", currentBalance);
+		System.out.println("Your current balance is $" + formattedBalance);
+		
+		System.out.println("How much would you like to deposit? ");
+		Scanner in = new Scanner(System.in);
+		depositAmount = in.nextDouble();
+		currentBalance = currentBalance  + depositAmount;
+		formattedBalance = String.format("%.2f", currentBalance);
+		System.out.println("Your new balance is $" + formattedBalance);
+	}
+
+}

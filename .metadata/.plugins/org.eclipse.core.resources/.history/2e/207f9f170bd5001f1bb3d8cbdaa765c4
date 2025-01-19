@@ -1,0 +1,10 @@
+package test02_conditionals;
+
+public class BasicLooping {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package test02_conditionals;
+import java.io.*;
+import java.util.*;
+public class BasicLooping {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		int i;
+//		for (i=0; i<=100; i = (i*2 +1)) {
+//			System.out.println(i);
+//		}
+		
+//        int userValue = 2;
+//        for (i = 1; i <= 100; i += userValue) {
+//            System.out.println(i);
+//        }
+        
+        int i;
+//        for (i = 10; i > 0; i--) {
+//            System.out.println(i);
+//        }
+        
+        int base = 2;
+        int power = 5;
+        int result;
+        for (result = 1; result < 32; result = (result *= base)) {
+        	System.out.println(result);
+        	//System.out.println(2^5);
+        }
+	}
+
+}

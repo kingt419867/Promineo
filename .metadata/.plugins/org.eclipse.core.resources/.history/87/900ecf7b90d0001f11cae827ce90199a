@@ -1,0 +1,56 @@
+package bankAccountTest;
+import java.io.*;
+import java.util.*;
+public class bankAccountTest {
+
+	public static void main(String[] args) {
+		
+		double currentBalance = 0, depositAmount = 0, withdrawalAmount = 0;
+		String formattedBalance = String.format("%.2f", currentBalance);
+		String formattedDeposit = String.format("%.2f", depositAmount);
+		String formattedWithdrawal = String.format("%.2f", withdrawalAmount);
+		
+		System.out.println("What is your starting balance? ");
+		Scanner kb = new Scanner(System.in);
+		currentBalance = kb.nextDouble();
+		
+		formattedBalance = String.format("%.2f", currentBalance);
+		System.out.println("Your current balance is $" + formattedBalance);
+		
+		System.out.println("What would you like to do?  Please select the letter you want:");
+			System.out.println("Press 'A' to make a deposit.");
+			System.out.println("Press 'B' to make a withdrawal.");
+			System.out.println("Press 'C' to check your balance.");
+			System.out.println("Press 'D' to exit.");
+			System.out.println("");
+		String menuAnswer;
+		Switch menuAnswer {
+			case 'A':
+			case 'a':
+				System.out.println("How much would you like to deposit? ");
+				depositAmount = kb.nextDouble();
+				currentBalance = currentBalance  + depositAmount;
+				formattedBalance = String.format("%.2f", currentBalance);
+				System.out.println("Your new balance is $" + formattedBalance);
+				break;
+			case 'B':
+			case 'b':
+				System.out.println("How much would you like to deposit? ");
+				withdrawalAmount = kb.nextDouble();
+				currentBalance = currentBalance - withdrawalAmount;
+				formattedBalance = String.format("%.2f", currentBalance);
+				System.out.println("Your new balance is $" + formattedBalance);
+				break;
+			case 'C':
+			case 'c':
+				formattedBalance = String.format("%.2f", currentBalance);
+				System.out.println("Your current balance is $" + formattedBalance);
+				break;
+			case 'D':
+			case 'd':
+			default:
+				kb.close();
+				
+	}
+
+}

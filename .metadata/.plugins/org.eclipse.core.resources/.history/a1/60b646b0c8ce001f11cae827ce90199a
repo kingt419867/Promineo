@@ -1,0 +1,10 @@
+package week1Labs;
+
+public class week1VariablesAndOperationsLab {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

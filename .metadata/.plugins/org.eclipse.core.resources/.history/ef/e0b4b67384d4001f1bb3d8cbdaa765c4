@@ -1,0 +1,75 @@
+package test02;
+import java.io.*;
+import java.util.*;
+
+public class AdvancedBooleans {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		      
+		    //public static void aeiou(char letter) {          
+		       
+		        // WRITE YOUR CODE HERE 
+		    
+			//public static void main(String[] args) {
+//				Scanner in = new Scanner(System.in);
+//				char a;
+//				a = in.nextLine().charAt(0);
+//			    aeiou(a);
+//			    
+//			    if ((letter == 'a') || (letter == 'e') || (letter == 'i') || (letter == 'o') || (letter == 'u')) {
+//			        System.out.println("It's a vowel!");
+//			    } else {
+//			        System.out.println("It's a consonant!");
+//			    }
+			
+		
+//			int wordLength;
+//	        wordLength = randomWord.length();
+//	        if (wordLength >= 10) {
+//	            System.out.println("That is a really long word!");
+//	        } else {
+//	            System.out.println("Your word is not that long.");
+//	        }
+		System.out.println("Enter the temperature highs for Sunday, Monday, and Tuesday:  ");
+		Scanner kb = new Scanner(System.in);
+		double sundayTemp, mondayTemp, tuesdayTemp;
+		sundayTemp = kb.nextDouble();
+		mondayTemp = kb.nextDouble();
+		tuesdayTemp = kb.nextDouble();
+		double theHottestDay1;
+        double theHottestDay2;
+        double theHottestDay3;
+        //First test
+        if (sundayTemp > mondayTemp) {
+            theHottestDay1 = sundayTemp;
+        } else {
+            theHottestDay1 = mondayTemp;
+        }
+        System.out.println(theHottestDay1 + " is the hottest of Sunday or Monday.");
+        //2nd test
+        if (mondayTemp > tuesdayTemp) {
+            theHottestDay2 = mondayTemp;
+        } else {
+            theHottestDay2 = tuesdayTemp;
+        }
+        System.out.println(theHottestDay2 + " is the hottest of Monday or Tuesday.");
+        //3rd test
+        if (theHottestDay1 > theHottestDay2) {
+            theHottestDay3 = theHottestDay1;
+        } else {
+            theHottestDay3 = theHottestDay2;
+        }
+        System.out.println(theHottestDay3 + " is the hottest temp.");
+        if (theHottestDay3 == sundayTemp) {			//Type mismatch:  Cannot convert from Double to Boolean.
+            System.out.println("Sunday");
+        } else if (theHottestDay3 == mondayTemp) {  //Type mismatch:  Cannot convert from Double to Boolean.
+            System.out.println("Monday");
+        } else {
+            System.out.println("Tuesday");
+        }
+	
+		
+		
+	}
+}

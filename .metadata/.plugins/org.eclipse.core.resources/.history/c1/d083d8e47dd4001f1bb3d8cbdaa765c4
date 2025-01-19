@@ -1,0 +1,36 @@
+package test02;
+import java.io.*;
+import java.util.*;
+public class AdvancedBooleans {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		      
+		    public static void aeiou(char letter) {          
+		       
+		        // WRITE YOUR CODE HERE 
+		    }
+			public static void main(String[] args) {
+				Scanner in = new Scanner(System.in);
+				char a;
+				a = in.nextLine().charAt(0);
+			    aeiou(a);
+			    
+			    if ((letter == 'a') || (letter == 'e') || (letter == 'i') || (letter == 'o') || (letter == 'u')) {
+			        System.out.println("It's a vowel!");
+			    } else {
+			        System.out.println("It's a consonant!");
+			    }
+			}
+		
+			int wordLength;
+	        wordLength = randomWord.length();
+	        if (wordLength >= 10) {
+	            System.out.println("That is a really long word!");
+	        } else {
+	            System.out.println("Your word is not that long.");
+	        }
+			
+	}
+
+}
