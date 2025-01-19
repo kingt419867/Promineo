@@ -26,13 +26,22 @@ public class Conditionals2 {
         //boolean weekDay = (dayTest == "monday" || dayTest == "tuesday" || dayTest == "wednesday" || dayTest == "thursday" || dayTest == "friday");
         //boolean weekEnd = (dayTest == "saturday" || dayTest == "sunday");
         //System.out.println(weekDay + " " + weekEnd);
-        if (weekDay) {
-            System.out.println(day + " is a weekday.");
-        } else if (weekEnd) {
-            System.out.println(day + " is a weekend day.");
-        } else
-            System.out.println("Invalid day!");
-
+//        if (weekDay) {
+//            System.out.println(day + " is a weekday.");
+//        } else if (weekEnd) {
+//            System.out.println(day + " is a weekend day.");
+//        } else
+//            System.out.println("Invalid day!");
+        
+        
+        //Trying to do the above while using an array, instead...
+        String[] weekDays = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+        String[] weekEnds = {"Saturday", "Sunday"};
+        if (day : weekDays) {
+        	System.out.println(day + " is a weekday.");
+        } else if (day : weekEnds) {
+        	System.out.println(day + " is a weekend day.");
+        }
+        
 	}
-
 }
